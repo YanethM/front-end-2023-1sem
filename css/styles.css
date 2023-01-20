@@ -1,8 +1,6 @@
 .container {
   margin: 50px;
-  display: flex;
-  flex-direction: row;
-  background-color: aquamarine;
+  background-color: rgb(227, 228, 230);
 }
 
 .container h1 {
@@ -11,10 +9,32 @@
   font-style: italic;
 }
 
-.container-img {
-  padding: 1em;
+.container-img1 {
+  padding: 3em;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.container-img1 img {
+  border-radius: 10px;
   width: 413px;
   height: 620px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.container-img2 {
+  padding: 3em;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.container-img2 img {
+  border-radius: 10px;
+  width: 413px;
+  height: 620px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
